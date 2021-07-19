@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Hello Mongo!</h1>
+  <form action="/create/test/library" method="POST">
+    <input type="text" name="author" placeholder="enter an author's name..." />
+    <input type="text" name="title" placeholder="enter the book's title..." />
+    <input type="number" name="copies" placeholder="how  many copies do we have?" />
+    <input type="submit" />
+  </form>
+
+  <form action="/create/test/librarian" method="POST">
+    <input type="text" name="name" />
+    <input type="submit" />
+  </form>
+
+  <ul id="book-list"></ul>
+
+  <script src="/scripts/main.js"></script>
+</body>
+</html>
